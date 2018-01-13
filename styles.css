@@ -1,0 +1,99 @@
+#navbar, .nav-item, #bio-container, 
+#about-me, #picture, #about-top, 
+#about-bot, #container, .proj,
+.proj-title, .content, .description,
+.proj-item{
+    border: solid 2px white;
+}
+
+body{
+    background-color: black;
+}
+
+div, p, h1, h2, h3, a, footer{
+    color: white;
+}
+
+footer{
+    padding: 5px;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.nav-item{
+    flex: 4;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-item a{
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.nav-item a:hover{
+    background-color: white;
+    color: black;
+}
+
+#main-title{
+    text-align: center;
+}
+
+#spacer{
+    height: 25px;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+}
+
+.buffer{
+    flex: 3.5;
+}
+
+.proj{
+    flex: 5;
+}
+
+.proj-title{
+    text-align: center;
+}
+
+.content{
+    text-align: center;
+}
+
+.description{
+    padding: 5px;
+}
+
+#bio-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#about-me, #picture{
+    flex: 6;
+}
+
+#about-me{
+    display: flex;
+    flex-direction: column;
+}
+
+#about-top, #about-bot{
+    min-height: 75px;
+    padding: 5px;
+}
+
+#picture{
+    padding: 5px;
+}
+
