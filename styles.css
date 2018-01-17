@@ -1,9 +1,14 @@
-#navbar, .nav-item, #bio-container, 
+/* #navbar, .nav-item, #bio-container, 
 #about-me, #picture, #about-top, 
 #about-bot, #container, .proj,
 .proj-title, .content, .description,
 .proj-item{
     border: solid 2px white;
+} */
+
+h3 {
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -28,6 +33,7 @@ footer{
     flex: 4;
     padding: 0px;
     margin: 0px;
+    border: solid 2px white;
 }
 
 .nav-item a{
@@ -52,14 +58,16 @@ footer{
 #container{
     display: flex;
     flex-direction: row;
+    border: solid 2px white;
 }
 
 .buffer{
-    flex: 3.5;
+    flex: 4.5;
 }
 
 .proj{
-    flex: 5;
+    flex: 3;
+    border: solid 2px white;
 }
 
 .proj-title{
@@ -68,15 +76,18 @@ footer{
 
 .content{
     text-align: center;
+    /* padding: 5px; */
 }
 
 .description{
     padding: 5px;
+    text-align: center;
 }
 
 #bio-container{
     display: flex;
     flex-direction: row;
+    border: solid 2px white;
 }
 
 #about-me, #picture{
