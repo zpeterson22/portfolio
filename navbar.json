@@ -1,0 +1,6 @@
+{
+    "nav": [
+        ["Home", "bio.html"],
+        ["Projects", "designproj.html"]
+    ]
+}

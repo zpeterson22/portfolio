@@ -6,17 +6,26 @@
     border: solid 2px white;
 } */
 
+h1, h2, h3{
+    font-family: 'Lato', sans-serif;
+}
+
+p, a, span, code, div{
+    font-family: 'Open Sans', sans-serif;
+}
+
 h3 {
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-color: black;
+    /* background-color: black; */
+    background-color: #ba8d57;
 }
 
 div, p, h1, h2, h3, a, footer{
-    color: white;
+    /* color: white; */
 }
 
 footer{
@@ -33,13 +42,17 @@ footer{
     flex: 4;
     padding: 0px;
     margin: 0px;
-    border: solid 2px white;
+    /* border: solid 2px white; */
+    border: solid 2px black;
+    /* border-radius: 15px; */
 }
 
 .nav-item a{
     display: block;
     padding: 8px 16px;
     text-decoration: none;
+    color: black;
+    /* border-radius: 10px; */
 }
 
 .nav-item a:hover{
@@ -49,49 +62,115 @@ footer{
 
 #main-title{
     text-align: center;
+    padding: 10px;
 }
 
 #spacer{
+    padding: 5px;
     height: 25px;
 }
 
-#container{
+/* ----- Design Styles ----- */
+#parent-container {
     display: flex;
     flex-direction: row;
-    border: solid 2px white;
+    margin: 0 auto;
+    width: 85%;
+    /* flex: 6; */
+    /* padding: 20px; */
 }
 
-.buffer{
-    flex: 4.5;
+#container, #contianer-two {
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+    /* padding: 20px; */
+    /* border: solid 2px white; */
 }
 
-.proj{
+/* .buffer {
+    flex: 1;
+}
+
+.buffer-small {
+    flex: .5;
+} */
+
+.proj-picture, .proj-video{
     flex: 3;
-    border: solid 2px white;
+    display: flex;
+    flex-direction: row;
+    /* border: solid 2px black; */
+    /* border-bottom: 2px black solid; */
+    /* background-color: white; */
+    /* border-radius: 5px; */
+    margin: 15px;
+}
+
+.proj-info {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
 }
 
 .proj-title{
+    /* color: black; */
     text-align: center;
+    padding: 5px;
 }
 
 .content{
-    text-align: center;
-    /* padding: 5px; */
-}
-
-.description{
+    flex: 8;
     padding: 5px;
     text-align: center;
 }
 
+.content img {
+    /* height: 250px; */
+}
+
+.video-content {
+    padding: 5px;
+}
+
+.description{
+    /* color: black; */
+    padding: 5px;
+    text-align: center;
+}
+
+/* @media all and (max-width: 1260px) {
+    #container {
+        flex-direction: column;
+    }
+
+    .buffer, .buffer-small {
+        display: none;
+    }
+
+    .proj-picture, .proj-video {
+        margin: 0 auto;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+} */
+/* ----- end of design styles ----- */
+
+/* ------ Bio Styles ------ */
 #bio-container{
     display: flex;
     flex-direction: row;
-    border: solid 2px white;
+    /* border: solid 2px white; */
+    /* padding: 20px; */
+}
+
+.bio-spacer {
+    flex: .5;
 }
 
 #about-me, #picture{
-    flex: 6;
+    padding: 20px;
+    flex: 5.5;
 }
 
 #about-me{
@@ -99,12 +178,46 @@ footer{
     flex-direction: column;
 }
 
-#about-top, #about-bot{
-    min-height: 75px;
-    padding: 5px;
+#about-top, #about-bot, .about-spacer {
+    /* min-height: 75px; */
+    /* padding: 10px; */
+    font-size: 20px;
+}
+
+#about-top, #about-bot {
+    flex: 5.5;
+}
+
+.about-spacer {
+    flex: 1;
 }
 
 #picture{
-    padding: 5px;
+    /* padding: 5px; */
+    text-align: center;
 }
 
+#picture img {
+    padding: 15px;
+    border-radius: 50%;
+}
+/* ----- end of bio styles ----- */
+
+/* ----- start of index styles ----- */
+.index-body {
+    background-color: #ba8d57;
+}
+
+.home-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -75px;
+    height: 150px;
+    width: 150px;
+    background: none;
+    /* background-color: black; */
+    cursor: pointer;
+}
+/* ----- end of index styles ----- */
