@@ -26,3 +26,7 @@ function navBar(json) {
         nav.innerHTML = content;
     }
 }
+
+function projDetails(json) {
+    
+}

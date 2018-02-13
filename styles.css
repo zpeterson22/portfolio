@@ -20,30 +20,44 @@ h3 {
 }
 
 body{
-    /* background-color: black; */
-    background-color: #ba8d57;
+    background-color: black;
+    /* background-color: #ba8d57; */
 }
 
 div, p, h1, h2, h3, a, footer{
-    /* color: white; */
+    color: white;
 }
 
 footer{
     padding: 5px;
 }
 
+.title-container {
+    display: flex;
+    flex-direction: row;
+}
+
 #navbar{
+    /* float: right;
+    clear: right; */
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+    flex: 2;
 }
 
 .nav-item{
     flex: 4;
     padding: 0px;
     margin: 0px;
+    min-width: 100px;
+    max-width: 100px;
+    text-align: center;
     /* border: solid 2px white; */
-    border: solid 2px black;
+    /* border: solid 2px black; */
     /* border-radius: 15px; */
 }
 
@@ -51,7 +65,8 @@ footer{
     display: block;
     padding: 8px 16px;
     text-decoration: none;
-    color: black;
+    /* color: black; */
+    color: white;
     /* border-radius: 10px; */
 }
 
@@ -61,8 +76,11 @@ footer{
 }
 
 #main-title{
+    /* float: left;
+    clear: left; */
     text-align: center;
     padding: 10px;
+    flex: 10;
 }
 
 #spacer{
@@ -102,7 +120,7 @@ footer{
     flex-direction: row;
     /* border: solid 2px black; */
     /* border-bottom: 2px black solid; */
-    /* background-color: white; */
+    background-color: white;
     /* border-radius: 5px; */
     margin: 15px;
 }
@@ -114,7 +132,7 @@ footer{
 }
 
 .proj-title{
-    /* color: black; */
+    color: black;
     text-align: center;
     padding: 5px;
 }
@@ -134,7 +152,7 @@ footer{
 }
 
 .description{
-    /* color: black; */
+    color: black;
     padding: 5px;
     text-align: center;
 }
@@ -158,6 +176,7 @@ footer{
 
 /* ------ Bio Styles ------ */
 #bio-container{
+    /* clear: both; */
     display: flex;
     flex-direction: row;
     /* border: solid 2px white; */
@@ -195,6 +214,7 @@ footer{
 #picture{
     /* padding: 5px; */
     text-align: center;
+    color: white;
 }
 
 #picture img {
@@ -205,7 +225,17 @@ footer{
 
 /* ----- start of index styles ----- */
 .index-body {
-    background-color: #ba8d57;
+    /* background-color: #ba8d57; */
+    background-color: black;
+}
+
+#instruction {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -30px;
+    color: black;
 }
 
 .home-icon {
@@ -217,7 +247,8 @@ footer{
     height: 150px;
     width: 150px;
     background: none;
-    /* background-color: black; */
+    border-radius: 50%;
+    background-color: white;
     cursor: pointer;
 }
 /* ----- end of index styles ----- */
