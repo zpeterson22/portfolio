@@ -1,20 +1,26 @@
-/* #navbar, .nav-item, #bio-container, 
-#about-me, #picture, #about-top, 
-#about-bot, #container, .proj,
-.proj-title, .content, .description,
-.proj-item{
-    border: solid 2px white;
-} */
-
-h1, h2, h3{
-    font-family: 'Lato', sans-serif;
+#green, #purple {
+    height: 100px;
+    width: 100px;
 }
 
-p, a, span, code, div{
+#green {
+    background-color: #4ef250;
+}
+
+#purple {
+    background-color: #f21f83;
+}
+
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Jolly Lodger', cursive; */
+}
+
+p, a, span, code, div, pre {
     font-family: 'Open Sans', sans-serif;
 }
 
-h3 {
+h3, h2, ul, li {
     margin: 0;
     padding: 0;
 }
@@ -37,9 +43,7 @@ footer{
     flex-direction: row;
 }
 
-#navbar{
-    /* float: right;
-    clear: right; */
+#navbar {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -49,19 +53,16 @@ footer{
     flex: 2;
 }
 
-.nav-item{
+.nav-item {
     flex: 4;
     padding: 0px;
     margin: 0px;
     min-width: 100px;
     max-width: 100px;
     text-align: center;
-    /* border: solid 2px white; */
-    /* border: solid 2px black; */
-    /* border-radius: 15px; */
 }
 
-.nav-item a{
+.nav-item a {
     display: block;
     padding: 8px 16px;
     text-decoration: none;
@@ -70,15 +71,13 @@ footer{
     /* border-radius: 10px; */
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
     background-color: white;
     color: black;
 }
 
 #main-title{
-    /* float: left;
-    clear: left; */
-    text-align: center;
+    /* text-align: center; */
     padding: 10px;
     flex: 10;
 }
@@ -89,56 +88,69 @@ footer{
 }
 
 /* ----- Design Styles ----- */
-#parent-container {
+#parent-proj-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0 auto;
     width: 85%;
     /* flex: 6; */
     /* padding: 20px; */
 }
 
-#container, #contianer-two {
+#proj-container {
     display: flex;
-    flex-direction: column;
-    flex: 6;
+    flex-direction: row;
+    /* flex: 6; */
+    flex: 1;
     /* padding: 20px; */
     /* border: solid 2px white; */
 }
 
-/* .buffer {
-    flex: 1;
-}
-
-.buffer-small {
-    flex: .5;
-} */
-
-.proj-picture, .proj-video{
-    flex: 3;
+.proj-picture, .proj-video, .proj-spacer, .proj-picture-big {
+    /* flex: 3; */
     display: flex;
     flex-direction: row;
     /* border: solid 2px black; */
     /* border-bottom: 2px black solid; */
     background-color: white;
+    border-radius: 15px;
     /* border-radius: 5px; */
     margin: 15px;
+}
+
+.proj-picture {
+    flex: 1;
+}
+
+.proj-picture-big {
+    flex: 3;
+}
+
+.proj-video {
+    flex: 3;
+}
+
+.proj-spacer {
+    flex: 1;
 }
 
 .proj-info {
     display: flex;
     flex-direction: column;
-    flex: 4;
+    /* flex: 4; */
+    flex: 1;
 }
 
 .proj-title{
     color: black;
     text-align: center;
     padding: 5px;
+    flex: 1;
 }
 
 .content{
-    flex: 8;
+    /* flex: 8; */
+    flex: 1;
     padding: 5px;
     text-align: center;
 }
@@ -155,6 +167,11 @@ footer{
     color: black;
     padding: 5px;
     text-align: center;
+    flex: 1;
+}
+
+@media all and (max-width: 1230px) {
+    /* TODO adjust so that project pages is more responsive */
 }
 
 /* @media all and (max-width: 1260px) {
@@ -176,11 +193,11 @@ footer{
 
 /* ------ Bio Styles ------ */
 #bio-container{
-    /* clear: both; */
     display: flex;
     flex-direction: row;
-    /* border: solid 2px white; */
-    /* padding: 20px; */
+    /* justify-content: center; */
+    margin: 0 auto;
+    width: 85%;
 }
 
 .bio-spacer {
@@ -198,8 +215,6 @@ footer{
 }
 
 #about-top, #about-bot, .about-spacer {
-    /* min-height: 75px; */
-    /* padding: 10px; */
     font-size: 20px;
 }
 
@@ -207,12 +222,18 @@ footer{
     flex: 5.5;
 }
 
+.basic-info {
+    text-decoration: none;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    margin: 25px;
+}
+
 .about-spacer {
     flex: 1;
 }
 
 #picture{
-    /* padding: 5px; */
     text-align: center;
     color: white;
 }
@@ -220,6 +241,19 @@ footer{
 #picture img {
     padding: 15px;
     border-radius: 50%;
+}
+
+.basic-info-title {
+    margin: 5px;
+}
+
+.contact-list {
+    margin: 25px;
+}
+
+.contact-list-item {
+    list-style-type: none;
+    padding: 10px;
 }
 /* ----- end of bio styles ----- */
 
