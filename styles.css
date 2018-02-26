@@ -43,6 +43,25 @@ footer{
     flex-direction: row;
 }
 
+.title-logo-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #F21F83;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.title-logo {
+    margin: auto;
+    min-width: 65px;
+    min-height: 65px;
+    max-width: 65px;
+    max-height: 65px;
+}
+
 #navbar {
     display: flex;
     flex-direction: row;
