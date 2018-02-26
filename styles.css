@@ -276,13 +276,24 @@ footer{
     position: absolute;
     top: 50%;
     left: 50%;
+    margin-top: -125px;
+    margin-left: -125px;
+    height: 250px;
+    width: 250px;
+    background: none;
+    border-radius: 50%;
+    background-color: #F21F83;
+    /* border: 2px solid #4EF250; */
+    cursor: pointer;
+}
+
+.home-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     margin-top: -75px;
     margin-left: -75px;
     height: 150px;
     width: 150px;
-    background: none;
-    border-radius: 50%;
-    background-color: white;
-    cursor: pointer;
 }
 /* ----- end of index styles ----- */
